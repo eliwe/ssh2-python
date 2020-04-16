@@ -103,7 +103,7 @@ if USING_CYTHON:
     cmdclass['build_ext'] = build_ext
 
 setup(
-    name='ssh2-python',
+    name='ssh2-python-sedona',
     version=versioneer.get_version(),
     cmdclass=cmdclass,
     url='https://github.com/ParallelSSH/ssh2-python',
