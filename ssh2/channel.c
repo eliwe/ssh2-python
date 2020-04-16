@@ -1537,8 +1537,8 @@ static int __pyx_pf_4ssh2_7channel_7Channel___cinit__(struct __pyx_obj_4ssh2_7ch
  *         self._session = session
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
- *         if self._channel is not NULL:
- *             c_ssh2.libssh2_channel_free(self._channel)
+ *         # if self._channel is not NULL:
+ *         #     c_ssh2.libssh2_channel_free(self._channel)
  */
 
 /* Python wrapper */
@@ -1554,40 +1554,11 @@ static void __pyx_pw_4ssh2_7channel_7Channel_3__dealloc__(PyObject *__pyx_v_self
 
 static void __pyx_pf_4ssh2_7channel_7Channel_2__dealloc__(struct __pyx_obj_4ssh2_7channel_Channel *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
-  int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ssh2/channel.pyx":39
- * 
- *     def __dealloc__(self):
- *         if self._channel is not NULL:             # <<<<<<<<<<<<<<
- *             c_ssh2.libssh2_channel_free(self._channel)
- *         self._channel = NULL
- */
-  __pyx_t_1 = ((__pyx_v_self->_channel != NULL) != 0);
-  if (__pyx_t_1) {
-
-    /* "ssh2/channel.pyx":40
- *     def __dealloc__(self):
- *         if self._channel is not NULL:
- *             c_ssh2.libssh2_channel_free(self._channel)             # <<<<<<<<<<<<<<
- *         self._channel = NULL
- * 
- */
-    (void)(libssh2_channel_free(__pyx_v_self->_channel));
-
-    /* "ssh2/channel.pyx":39
- * 
- *     def __dealloc__(self):
- *         if self._channel is not NULL:             # <<<<<<<<<<<<<<
- *             c_ssh2.libssh2_channel_free(self._channel)
- *         self._channel = NULL
- */
-  }
-
   /* "ssh2/channel.pyx":41
- *         if self._channel is not NULL:
- *             c_ssh2.libssh2_channel_free(self._channel)
+ *         # if self._channel is not NULL:
+ *         #     c_ssh2.libssh2_channel_free(self._channel)
  *         self._channel = NULL             # <<<<<<<<<<<<<<
  * 
  *     @property
@@ -1598,8 +1569,8 @@ static void __pyx_pf_4ssh2_7channel_7Channel_2__dealloc__(struct __pyx_obj_4ssh2
  *         self._session = session
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
- *         if self._channel is not NULL:
- *             c_ssh2.libssh2_channel_free(self._channel)
+ *         # if self._channel is not NULL:
+ *         #     c_ssh2.libssh2_channel_free(self._channel)
  */
 
   /* function exit code */
