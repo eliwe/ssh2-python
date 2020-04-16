@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ssh2-python'
+project = u'ssh2-python-sedona'
 copyright = u'2017, P Kittenis'
 author = u'P Kittenis'
 
