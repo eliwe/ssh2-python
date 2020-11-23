@@ -1,0 +1,1 @@
+echo "apk update && apk upgrade && apk add --update gcc git  musl-dev libssh2 libssh2-dev python3-dev py3-pip patchelf && cd io && pip install wheel &&  pip install -r requirements_dev.txt && pip wheel /io -w wheelhose/" | docker run --rm -i -e SYSTEM_LIBSSH2=1 -v `pwd`:/io osgeo/gdal:alpine-normal-3.2.0
